@@ -30,10 +30,8 @@ int main () {
 				enQueue(myQueue, tempValue);
 				break;
 			case 2:
-				if(!deQueue(myQueue))
-					printf("\nempty");
-				else
-					printf("\nremoved %d", deQueue(myQueue));
+				tempValue=deQueue(myQueue);
+				(tempValue) ? printf("%d removed",tempValue): printf("Empty");
 				break;
 			case 3:
 				showQueue(*myQueue);
